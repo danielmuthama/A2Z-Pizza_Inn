@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/mdb.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
@@ -144,7 +147,7 @@
                   </select>
                 <label for="select">Select Size</label>
                 <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                  <option selected value="0">Choose Your Size Here</option>
+                  <option selected value="0">Choose Your Size</option>
                   <option value="large">Large -- sh. 1200</option>
                   <option value="medium">Medium -- sh. 900</option>
                   <option value="small">Small -- sh. 600</option>
@@ -185,8 +188,95 @@
                   </div>
                   <br><br>
                 <button type="submit" class="btn btn-secondary bg-secondary proceed">Continue</button>
-                
               </form>
+            </div>
+            <div class="col-sm-7">
+              <div id="information">
+                  <h1 class="h6-reponsive white-text text-lowercase pulse">Check Out</h6>
+              </div>
+              <div class="choice">
+                <h2>Your Order is:</h2>
+                <div id="your-orders">
+                  <table class="table table-sm  pizzatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Topping</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="ordersmade">
+                      <tr>
+                        <td id="pizzaname"></td>
+                        <td id="pizzasize"></td>
+                        <td id="pizzacrust"></td>
+                        <td id="pizzatopping"></td>
+                        <td id="totals"></td>
+                      </tr>                  
+                    </tbody>
+                  </table>
+                  <p id="pizzatotal"></p>
+                  <p id="totalbill"></p> 
+                  <p id="addedprice">Delivery will cost sh. 200</p>
+                  <p id="finallmessage"></p>
+                </div>
+                <button class="btn btn-secondary  bg-secondary addPizza">Add Pizza</button>
+                <button class="btn btn-secondary bg-secondary " id="checkout">Checkout</button>
+                <button class="btn btn-secondary deliver bg-secondary ">Home delivery?</button>
+              </div>
+              <div class="delivery"> 
+                  <form action="" id="form">
+                    <div class="form-group">
+                      <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                      <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                      <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                      <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Your Order</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container map">
+        <div class="map"><div class="gmap_canvas"><iframe width="1100" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ngong%20road&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net/embed-google-map/">bitgeeks.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:1200px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:1100px;}</style></div>
+      </div>
+
+      <div class="container-fluid" id="contact">
+        <div class="controls-top "> 
+            <h4>Contact</h4>
+          </div>
+        <div class="row" id="contactdetails">
+          <div class="col-md-4">
+            <img src="https://img.icons8.com/ios-filled/50/000000/link-company-parent.png">
+             <p>Greenspan Mall</p>
+             <p>Lower Savanna Dakar Rd </p>
+          </div>
+          <div class="col-md-3 text-justify">
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/place-marker.png">
+            <p>A<sub><strong>2</strong></sub>Z  PIZZA INN</p>
+            <p>Dakar Road | Donholm</p>
+            <p>00100,Nairobi-Kenya </p>
+          </div>
+          <div class="col-md-3">
+            <img src="https://img.icons8.com/ios-filled/50/000000/add-contact-to-company.png">
+             <p>danielmuthama23@gmail.com</p>
+             <p>Phone: 0746815371</p>
+          </div>
+          <div class="col-md-4">
+            
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="container text-center footer">
+            <p>&copy; 2022 | A<sub><strong>2</strong></sub>Z  PIZZA INN</p>
+          </div>
+        </div>
+    </div>
 
         </div>
         </div>
