@@ -43,4 +43,26 @@ nav .navbar{
   .nav-item a{
     font-size: 20px;
     font-weight: 700;
-  }
+}
+.landing{
+    background-image: url("../asset/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    padding-bottom: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+.text a{
+    font-size: 20px;
+    font-weight: 700;
+}
+  .text h5{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.button{
+    border-radius: 10px;
+}
