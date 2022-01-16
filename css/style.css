@@ -178,10 +178,8 @@ nav .navbar{
   .bounce {
     animation: bounce 2s infinite;
   }
-  
   .map{
     height: 300px;
-    padding-bottom: 30px;
     margin: 0px auto;
   
   }
