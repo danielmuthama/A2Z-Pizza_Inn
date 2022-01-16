@@ -73,3 +73,49 @@ nav .navbar{
     text-align: center;
     line-height: 30px;
 }
+.card-title{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+  }
+  .col-md-4{
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+.order h4{
+  text-align: center;
+}
+#variety{
+  padding-top: 30px;
+}
+#variety{
+    padding-top: 30px;
+  }
+  .order{
+    background-attachment: fixed;
+    background-image: url("../asset/5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .order-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+    padding-left: 6%;
+  }
+  .choise{
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .delivery{
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
