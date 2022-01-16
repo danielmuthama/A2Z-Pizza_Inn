@@ -14,7 +14,21 @@ html,body,header,
     width: 100%;
     position: absolute;
 }
+#head{
+    padding-top: 10%;
+}
 body{
     margin: 0;
     padding: 0;
-  }
+}
+h5 {
+    letter-spacing: 3px;
+}
+h1{
+    letter-spacing: 8px;
+    color:#8b0000;
+    font-weight: bolder;
+    font-family: 'Wallpoet', cursive;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px #8b0000;
+}
