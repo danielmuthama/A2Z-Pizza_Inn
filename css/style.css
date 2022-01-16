@@ -156,3 +156,25 @@ nav .navbar{
     color: white;
     font-size: 30px;
   }
+  .d-flex{
+    display: flex !important;
+  }
+  .arrow
+  {
+    position: relative;
+    left: 50%;
+    top: 90%;
+    margin-left:-20px;
+    
+  }
+  
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  .map{
+    height: 300px;
+    padding-bottom: 30px;
+    margin: 0px auto;
+  
+  }
