@@ -8,6 +8,7 @@ html,body,header,
 * {
     font-family: sans-serif;
 }
+
 #overlay-home{
     background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
@@ -28,13 +29,14 @@ h1{
     letter-spacing: 8px;
     color:#8b0000;
     font-weight: bolder;
-    font-family: 'Wallpoet', cursive;
+    font-family: 'Wallpoet';
     font-size: 60px;
-    text-shadow: 2px 2px 5px yellow;
+    text-shadow: 2px 4px 5px yellow;
 }
 nav .navbar{
     width: 99%;
     padding-right: 0px;
+    transition: all 0.3s ease;
   }
   .navbar-brand{
     margin-right: 30%;
@@ -58,7 +60,7 @@ nav .navbar{
     font-size: 20px;
     font-weight: 700;
 }
-  .text h5{
+.text h5{
     font-size: 25px;
     padding: 30px;
 }
@@ -82,7 +84,12 @@ nav .navbar{
     border-radius: 10%;
     padding: 10px;
   }
-
+  .col-md-4:hover {
+    transform: scale(1.2);
+  }
+.carousel-inner {
+    background: crimson;
+}
 .order h4{
   text-align: center;
 }
@@ -91,12 +98,12 @@ nav .navbar{
 }
 .order{
     background-attachment: fixed;
-    background-image: url("../asset/5.jpg");
+    background-image: url("../asset/6.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    padding-top: 4%;
+    padding-top: 8%;
     padding-bottom: 4%;
   }
   .order-overlay{
@@ -106,7 +113,7 @@ nav .navbar{
     padding-bottom: 20px;
     padding-left: 6%;
   }
-  .choise{
+  .choice{
     display: none;
     padding-left: 2%;
     padding-right: 2%;
@@ -148,7 +155,7 @@ nav .navbar{
     font-size: 20px;
     color: white;
   }
-  .choise h4{
+  .choice h4{
     color:#8b0000;
     text-align: left;
   }
