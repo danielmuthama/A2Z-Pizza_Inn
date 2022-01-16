@@ -59,4 +59,21 @@ function GetPizza (name,size,crust,topping,total){
         default:
           console.log("error");
       }
+      let topping_value = pTopping.length * 100;
+
+      if((pSize == "0") && (pCrust == "0")){
+        $("button.proceed").show();
+        $("#information").show();
+        $("div.choice").hide();
+        alert("Please select the Pizza size and crust");
+      }
+      else {
+    
+        $("button.proceed").hide();
+        $("#information").hide();
+        $("div.choice").slideDown(1200);
+      }
+    
+      total = price + c_price + topping_value;
+      let checkoutTotal = 0;
     
