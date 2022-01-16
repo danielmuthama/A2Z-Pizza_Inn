@@ -8,3 +8,9 @@ html,body,header,
 * {
     font-family: sans-serif;
 }
+#overlay-home{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
