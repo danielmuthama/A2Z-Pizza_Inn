@@ -2,7 +2,7 @@
 
 ##### By Daniel Muthama
 
-![Project Image](images/PORTFOLIO.png)
+![Project Image](asset/prof.png)
 ### It is a description of my resume.
 
 ## Table of Content
