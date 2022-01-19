@@ -33,6 +33,9 @@ h1{
     font-size: 60px;
     text-shadow: 2px 4px 5px yellow;
 }
+#collapsibleNavbar {
+  background-color: crimson;
+}
 nav .navbar{
     width: 99%;
     padding-right: 0px;
@@ -64,9 +67,12 @@ nav .navbar{
     font-size: 25px;
     padding: 30px;
 }
-
 .button{
     border-radius: 10px;
+}
+button {
+  background-color: crimson;
+
 }
 #slogan{
     padding-top: 5%;
@@ -74,11 +80,21 @@ nav .navbar{
 #slogan p{
     text-align: center;
     line-height: 30px;
+    color: blue;
+    font-size: 20px;
 }
 .card-title{
     text-align: center;
     color: black;
     font-weight: 800;
+  }
+  .card {
+    height: 250px;
+    width: 300px;
+  }
+  .card-img-top{
+    height: 250px;
+    width: 300px;
   }
   .col-md-4{
     border-radius: 10%;
@@ -93,12 +109,12 @@ nav .navbar{
 .order h4{
   text-align: center;
 }
-#variety{
+#product{
   padding-top: 30px;
 }
 .order{
     background-attachment: fixed;
-    background-image: url("../asset/6.jpg");
+    background-image: url("../asset/cashier");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,11 +123,15 @@ nav .navbar{
     padding-bottom: 4%;
   }
   .order-overlay{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(33, 33, 85, 0.8);
     margin-left: 2%;
     margin-right: 2%;
     padding-bottom: 20px;
     padding-left: 6%;
+    box-shadow: 0px 3px 6px blue;
+  }
+  .order-overlay h4{
+    padding: 2%;
   }
   .choice{
     display: none;
@@ -125,14 +145,14 @@ nav .navbar{
   }
   #contact h4{
     text-align: center;
+    padding: 3% 0% 3% 0%;
   }
   #contact{
     color: black;
-    background-color: #f2f2f2;
-    background: rgba(0, 0, 0, 0.3);
+    background-color: #d9d9e2;
   }
-  #contactdetails h4{
-    text-align: left;
+  #contactdetails{
+    text-align: center;
   }
   #addedprice{
     display: none;
@@ -176,10 +196,42 @@ nav .navbar{
   }
   
   .bounce {
-    animation: bounce 2s infinite;
+    animation: bounce 3s infinite;
   }
+  .container-map {
+    margin-top: 6%;
+    text-align: center;
+    width: 100%;
+    background-color: #222;
+  } 
+   .container-map >  h4{
+     padding-top: 3%;
+    color: white;
+   }
   .map{
-    height: 300px;
-    margin: 0px auto;
-  
+    height: 350px;
+    margin: 4%;
+
   }
+  #icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+  
