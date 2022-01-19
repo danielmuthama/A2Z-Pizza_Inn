@@ -170,9 +170,9 @@ function GetPizza (name,size,crust,topping,total){
     let location = $("input#location").val();
 
     if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
-      $("#finallmessage").append(person+", We have recieved your order and the delivery wil be made  at  "+location+ ". Prepare ksh. "+ deliceryAmount);
+      $("#finallmessage").append(person+", We have received your order and the delivery will be made  ASAP at  "+location+ ". Please ensure you have ksh. "+ deliceryAmount);
       $("#totalbill").hide();
-      $("#finallmessage").slideDown(1200);
+      $("#finallmessage").slideDown(1200); 
     }else{
       alert("Please fill in the deliver details");
       $(".delivery").show();
