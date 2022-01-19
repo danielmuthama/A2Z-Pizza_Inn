@@ -29,7 +29,7 @@
                             <a class="nav-link" href="#overlay-home">Home</a>
                           </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#variety">Product</a>
+                            <a class="nav-link" href="#product">Product</a>
                           </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#order">Order</a>
@@ -40,18 +40,19 @@
                     </ul>
                   </div>  
                 </nav>
+              </div>
                 <div class="mask rgba-black-light align-items-center">
                     <div class="container" id="head">
                       <div class="row">
                         <div class="col-md-12 mb-4 white-text text-center text">
                           <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse">A<sub><strong>2</strong></sub>Z  PIZZA INN</h1>
-                          <a class="btn btn-red button floater" href="#order">  Order Now!</a>
+                          <a class="btn btn-blue button floater" href="#order">  Order Now!</a>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                <div class="arrow bounce"> <a href="#variety"> <img src="asset/arrow.ico" alt=" arrow"width="40px"></a></div>
+                <div class="arrow bounce"> <a href="#product"> <img src="asset/arrow.ico" alt=" arrow"width="40px"></a></div>
             </div>
           </div>
     </header>
@@ -68,7 +69,7 @@
               </div>
             </div>
           </div>
-        <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="variety">
+        <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="product">
             <div class="controls-top "> 
               <h4><strong>PRODUCT</strong></h4>
             </div>
@@ -133,7 +134,7 @@
       <div class="container-fluid order" id="order">
         <div class="order-overlay">
           <div class="controls-top text-center" id="Order-now"> 
-            <h4><strong>Order-Now</strong></h4>
+            <h4><strong>ORDER NOW</strong></h4>
           </div>
 
           <div class="row">
@@ -141,7 +142,7 @@
               <form action="">
                   <label for="select">Choose Your Flavor</label>
                   <select class="browser-default custom-select custom-select-md mb-3 name" id="name">
-                    <option value="Choco Pizza">Chocolate Pizza</option>
+                    <option value="Choco Pizza">Choco Pizza</option>
                     <option value="Greek Pizza">Greek Pizza</option>
                     <option value="Neapolitan Pizza">Neapolitan Pizza</option>
                     <option value="Iranian Pizza">Iranian Pizza</option>
@@ -157,14 +158,14 @@
                 </select>
                 <label for="crust">Select Your Favorite Crust</label>
                   <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                    <option selected value="0">Select your preferred crust!</option>
-                    <option value="Crispy">Crispy --- sh. 400</option>
-                    <option value="Stuffed">Stuffed --- sh. 300</option>
-                    <option value="Gluten-free">Gluten-free --- sh. 350</option>
-                    <option value="Flatbread">Flatbread --- sh. 350</option>
-                    <option value="Focaccia">Focaccia --- sh. 250</option>
+                    <option selected value="0">Select your Crust!</option>
+                    <option value="Crispy">Crispy at sh. 400</option>
+                    <option value="Stuffed">Stuffed at sh. 300</option>
+                    <option value="Gluten-free">Gluten-free at sh. 350</option>
+                    <option value="Flatbread">Flatbread at sh. 350</option>
+                    <option value="Focaccia">Focaccia at sh. 250</option>
                   </select>
-                <label for="Toppings">Select Your Favourite Toppings Each at sh. 150</label><br>
+                <label for="Toppings">Select Your Toppings Each at sh. 150</label><br>
                   <div class="custom-control custom-checkbox custom-control-inline">
                     <input type="checkbox" class="custom-control-input" id="Pineapple" value="Pineapple" name="toppings">
                     <label class="custom-control-label" for="Pineapple">Pineapple</label>
@@ -191,11 +192,13 @@
                   </div>
                   <br><br>
                 <button type="submit" class="btn btn-secondary bg-secondary proceed">Continue</button>
+                <button onClick="window.location.reload();" onclick="style.display = 'none'">Refresh</button>
+
               </form>
             </div>
             <div class="col-sm-7">
               <div id="information">
-                  <h1 class="h6-reponsive white-text text-lowercase pulse">Check Out</h6>
+                  <h1 class="h6-reponsive white-text text-lowercase pulse">Amount ==?</h6>
               </div>
               <div class="choice">
                 <h2>Your Order is:</h2>
@@ -234,8 +237,8 @@
                     <div class="form-group">
                       <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                       <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
-                      <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                      <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Your Order</button>
+                      <input type="text" id="location" class="form-control mb-3" placeholder="Location">
+                      <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Order</button>
                     </div>
                   </form>
               </div>
@@ -244,44 +247,34 @@
       </div>
     </div>
 
-    <div class="container map">
-        <div class="map"><div class="gmap_canvas"><iframe width="1100" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ngong%20road&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net/embed-google-map/">bitgeeks.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:1200px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:1100px;}</style></div>
-      </div>
+    <div class="container-map">
+      <h4><strong>SEARCH OUR LOCATION<strong</h4>
+        <div class="map"><div class="gmap_canvas"><iframe width="1300" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=donholm&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net/embed-google-map/">bitgeeks.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:1200px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:1100px;}</style></div>
+    </div>
 
       <div class="container-fluid" id="contact">
         <div class="controls-top "> 
-            <h4><strong>Contact<strong</h4>
-          </div>
+            <h4><strong>CONTACT<strong</h4>
+        </div>
         <div class="row" id="contactdetails">
-          <div class="col-md-4">
-            <img src="https://img.icons8.com/ios-filled/50/000000/link-company-parent.png">
+          <div class="col-md-3">
+            <img id = "icon" src="https://img.icons8.com/ios-filled/50/000000/link-company-parent.png">
              <p>Greenspan Mall</p>
              <p>Lower Savanna Dakar Rd </p>
           </div>
-          <div class="col-md-3 text-justify">
-            <img src="https://img.icons8.com/pastel-glyph/64/000000/place-marker.png">
+          <div class="col-md-3">
+            <img id = "icon" src="https://img.icons8.com/pastel-glyph/64/000000/place-marker.png">
             <p>A<sub><strong>2</strong></sub>Z  PIZZA INN</p>
-            <p>Dakar Road | Donholm</p>
-            <p>00100,Nairobi-Kenya </p>
+            <p>00100, Nairobi-Kenya </p>
           </div>
           <div class="col-md-3">
-            <img src="https://img.icons8.com/ios-filled/50/000000/add-contact-to-company.png">
+            <img id = "icon" src="https://img.icons8.com/ios-filled/50/000000/add-contact-to-company.png">
              <p>danielmuthama23@gmail.com</p>
              <p>Phone: 0746815371</p>
           </div>
-          <div class="col-md-4">
-            
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-          <div class="container text-center footer">
-            <p>&copy; 2022 | A<sub><strong>2</strong></sub>Z  PIZZA INN</p>
-          </div>
-        </div>
     </div>
-</div>
-</div>
+    <div class=" col-md-3 arrow bounce"> <a href="#order"> <img src="asset/arrow-up.jpeg" alt=" arrow"width="40px"></a></div>
+
 <script src="js/script.js"></script>
 </body>
 </html>
